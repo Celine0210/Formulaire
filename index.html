@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <img src="logo.png" alt="Logo">
+    <form method="post" action="base.php">
+      
+      <label for="identifiant">Identifiant:</label>
+      <input type="text" id="identifiant" name="identifiant" required>
+
+      <label for="motDePasse">Mot de passe:</label>
+      <input type="password" id="motDePasse" name="motDePasse" minlength="8" required>
+      <span id="msg" style="display: none;"> </span> <br> <br>
+      <button type="reset">Reset</button>
+      <button type="submit"  name="valider">Valider</button>
+      <button type="submit" name="ajout">Ajout Compte</button>
+    </form>
+  </div>
+  <script src="fichier.js"></script>
+</body>
+</html>
